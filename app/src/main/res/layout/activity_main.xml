@@ -24,9 +24,31 @@
             android:layout_marginTop="22dp"
             android:layout_gravity="center"
             android:textSize="20dp"
-            android:text="FYP"/>
+            android:text="Gait Recognition"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="User 1 : (1 to 124)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="User 2 : (125 to 227)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="User 3 : (228 to 345)"/>
 
         <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -70,6 +92,20 @@
                 android:layout_marginRight="16dp"/>
         </LinearLayout>
 
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/linechart">
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+       <!-- </LinearLayout>-->
+
+
         <Button
             android:id="@+id/validate"
             android:layout_width="wrap_content"
@@ -77,6 +113,13 @@
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:text="Validate"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security Status"
+            android:layout_gravity="center"
+            android:id="@+id/btnSecurityStatus"
+            android:visibility="gone"/>
 
 
     </LinearLayout>
