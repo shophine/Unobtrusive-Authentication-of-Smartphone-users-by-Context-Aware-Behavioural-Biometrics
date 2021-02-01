@@ -97,3 +97,4 @@ lint/tmp/
 /build
 /captures
 .externalNativeBuild
+.idea
